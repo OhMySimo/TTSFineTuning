@@ -75,16 +75,16 @@ echo "📦 Cloning repository..."
 echo "=========================================="
 echo ""
 
-if [ -d "Qwen3-TTS-finetuning" ]; then
+if [ -d "TTSFineTuning" ]; then
     echo -e "${YELLOW}Repository already exists, updating...${NC}"
-    cd Qwen3-TTS-finetuning
+    cd TTSFineTuning
     git pull
     cd ..
 else
-    git clone https://github.com/OhMySimo/Qwen3-TTS-finetuning.git
+    git clone https://github.com/OhMySimo/TTSFineTuning
 fi
 
-cd Qwen3-TTS-finetuning/finetuning
+cd TTSFineTuning
 WORK_DIR=$(pwd)
 
 echo -e "${GREEN}✓${NC} Repository ready at: $WORK_DIR"
