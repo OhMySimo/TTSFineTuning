@@ -29,9 +29,10 @@ accelerate launch --num_processes=4 --mixed_precision=bf16 sft_12hz_complete_FIX
   --early_stopping \
   --early_stopping_patience 3 \
   --early_stopping_min_delta 0.001 \
-  --train_speaker_encoder   # <--- CRITICAL: Don't forget this!
+  --train_speaker_encoder
 
 echo "=================================================="
 echo "Training complete! Check output_round2_complete/"
 echo "Best checkpoint: output_round2_complete/checkpoint-best/"
+
 echo "=================================================="
